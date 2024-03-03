@@ -1,33 +1,8 @@
-export const BASE_URL = "";
-
-export const PRODUCTS_URL = `${BASE_URL}/api/products`;
-export const USERS_URL = `${BASE_URL}/api/users`;
-export const ORDERS_URL = `${BASE_URL}/api/orders`;
-export const PAYPAL_URL = `${BASE_URL}/api/config/paypal`;
-export const STRIPE_URL = `${BASE_URL}/api/config/stripe`;
-export const GOOGLE_URL = `${BASE_URL}/api/config/google`;
-export const FACEBOOK_URL = `${BASE_URL}/api/config/facebook`;
-
-export const UPLOADS_URL = `${BASE_URL}/api/uploads`;
-export const UPLOADS_PATH = "uploads";
-export const UPLOADS_MAX_SIZE = 1000000;
-export const UPLOADS_ACCEPTED_TYPES = ["image/jpeg", "image/png"];
-export const UPLOADS_MAX_WIDTH = 1000;
-export const UPLOADS_MAX_HEIGHT = 1000;
-export const UPLOADS_QUALITY = 0.8;
-export const UPLOADS_THUMBNAIL_WIDTH = 200;
-export const UPLOADS_THUMBNAIL_HEIGHT = 200;
-export const UPLOADS_THUMBNAIL_PREFIX = "thumbnail-";
-export const UPLOADS_THUMBNAIL_SUFFIX = "";
-export const UPLOADS_THUMBNAIL_TYPE = "image/jpeg";
-export const UPLOADS_THUMBNAIL_MAX_SIZE = 50000;
-export const UPLOADS_THUMBNAIL_ACCEPTED_TYPES = ["image/jpeg", "image/png"];
-export const UPLOADS_THUMBNAIL_MAX_WIDTH = 200;
-export const UPLOADS_THUMBNAIL_MAX_HEIGHT = 200;
-export const UPLOADS_THUMBNAIL_QUALITY = 0.6;
-export const UPLOADS_THUMBNAIL_PATH = "thumbnails";
-export const UPLOADS_THUMBNAIL_MAX_AGE = 1000 * 60 * 60 * 24 * 30;
-export const UPLOADS_THUMBNAIL_MAX_COUNT = 100;
-export const UPLOADS_THUMBNAIL_MAX_TOTAL_SIZE = 1000000;
-export const UPLOADS_THUMBNAIL_MAX_TOTAL_AGE = 1000 * 60 * 60 * 24 * 30;
-export const UPLOADS_THUMBNAIL_MAX_TOTAL_COUNT = 100;
+// export const BASE_URL =
+//   process.env.NODE_ENV === 'develeopment' ? 'http://localhost:5000' : '';
+export const BASE_URL = ""; // If using proxy
+export const PRODUCTS_URL = "/api/products";
+export const USERS_URL = "/api/users";
+export const ORDERS_URL = "/api/orders";
+export const PAYPAL_URL = "/api/config/paypal";
+export const STRIPE_URL = "/api/config/stripe";
