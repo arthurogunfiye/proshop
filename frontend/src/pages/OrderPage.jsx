@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { UseSelector, useSelector } from "react-redux";
+import { useEffect } from "react";
+// import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
+import { Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { toast } from "react-toastify";
@@ -31,7 +31,7 @@ const OrderPage = () => {
     error: errorPaypal,
   } = useGetPaypalClientIdQuery();
 
-  const { userInfo } = useSelector(state => state.auth);
+  // const { userInfo } = useSelector(state => state.auth);
 
   useEffect(() => {
     if (!errorPaypal && !loadingPaypal && paypal.clientId) {
@@ -65,11 +65,11 @@ const OrderPage = () => {
     });
   }
 
-  async function onApproveTest() {
-    await payOrder({ orderId, details: { payer: {} } });
-    refetch();
-    toast.success("Payment successful");
-  }
+  // async function onApproveTest() {
+  //   await payOrder({ orderId, details: { payer: {} } });
+  //   refetch();
+  //   toast.success("Payment successful");
+  // }
 
   function onError(error) {
     toast.error(error.message);
